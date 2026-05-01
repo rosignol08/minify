@@ -71,7 +71,7 @@ Le **Raspberry Pi** sert de **serveur web (CGI)** + scripts Python + **broker MQ
 - Python 3 + `paho-mqtt` + `mido` côté Pi.
 - ESP32 flashé avec le code `esp32/code_esp_32.ino`.
 
-### Ordre de lancement recommandé (Pi)
+### Ordre de lancement (Pi)
 1) Démarrer le broker MQTT (ex Mosquitto).
 2) Se placer dans `web/server/www/` et lancer le serveur web:
    - `python3 ../server.py`
@@ -149,7 +149,6 @@ projet_ioc/
 ├─ esp32/
 │  └─ code_esp_32.ino (le code pour l'esp32)
 └─ web/
-   ├─ client_pc.py
    └─ server/
       ├─ server.py
       └─ www/
